@@ -7,5 +7,12 @@
     "watch": "sass --watch ./assets/styles/main.scss:./public/css/style.css",
     "prod": "sass ./assets/styles/main.scss:./public/css/style.css --style compressed",
     "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "dependencies": {
+    "3": "^2.1.0",
+    "-": "^0.0.1",
+    "bootstrap-4": "^4.0.0",
+    "jquery": "1.9.1",
+    "popper.js": "^1.16.1"
   }
 }
