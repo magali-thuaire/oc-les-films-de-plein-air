@@ -1,0 +1,11 @@
+{
+  "name": "les-films-de-plein-air",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch": "sass --watch ./assets/styles/main.scss:./public/css/style.css",
+    "prod": "sass ./assets/styles/main.scss:./public/css/style.css --style compressed",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  }
+}
