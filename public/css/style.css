@@ -9928,5 +9928,237 @@ h3 {
     border-color: #dee2e6;
   }
 }
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cardo";
+  src: url("fonts/cardo/Cardo-Regular.ttf") format("truetype");
+}
+/* Buzz Out */
+@keyframes elementor-animation-buzz-out {
+  10% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    transform: translateX(-1px) rotate(0);
+  }
+}
+.animation-buzz-out:hover {
+  animation-name: elementor-animation-buzz-out;
+  animation-duration: 0.75s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+.navbar-custom__image {
+  width: 120px;
+  margin-right: 100px;
+  transform: scale(1);
+  opacity: 1;
+  transition-property: all;
+  transition-duration: 1000ms;
+}
+.navbar-custom__image:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+.navbar-custom__item {
+  color: white !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  padding: 3px 0 !important;
+}
+.navbar-custom__item:not(:last-child) {
+  margin-right: 30px;
+}
+.navbar-custom__item:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  background: #DCA652;
+  transition: all 200ms ease 100ms;
+  width: 0%;
+}
+.navbar-custom__item:hover {
+  color: #DCA652 !important;
+  transition-property: color;
+  transition-delay: 100ms;
+  transition-duration: 200ms;
+}
+.navbar-custom__item:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.fixed-top.scrolled {
+  background-color: rgba(65, 87, 51, 0.79) !important;
+  border: #DCA652 solid 1px;
+  transition: background-color 200ms linear;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-primary {
+  background-color: #415733C7;
+  border: none;
+  color: white;
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 50px;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 2;
+}
+.btn-primary:hover {
+  background-color: #FFFFFFBD;
+  color: #415733;
+}
+
+#hero {
+  background: url("../images/festival-des-films-de-plein-air-monceau.jpeg");
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hero .overlay {
+  background-color: #BF78216B;
+  opacity: 0.38;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+}
+#hero p.title {
+  color: white;
+  font-family: "Cardo", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 46px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+}
+#hero p.subtitle {
+  color: #E19E43;
+  font-family: "Cardo", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  text-shadow: 38px 16px 66px #000000;
+  mix-blend-mode: screen;
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+}
+#hero h1 {
+  color: white;
+  font-family: "Cardo", sans-serif;
+  font-size: 70px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-shadow: 10px 12px 100px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+  margin-top: 50px;
+}
+#hero .separator {
+  margin: 20px auto;
+  padding: 10px;
+}
+#hero .headline {
+  text-transform: uppercase;
+  font-size: 32px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+#presentation {
+  background-color: #F4F4F5;
+  padding: 80px !important;
+}
+#presentation h2 {
+  font-family: "Montserrat Bold", sans-serif;
+  color: #DCA652;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+#presentation p {
+  font-family: "Montserrat", sans-serif;
+  color: #DCA652;
+  font-size: 12px;
+}
+#presentation p:not(.subtitle) {
+  margin: 20px 0 0 0;
+}
+#presentation p.subtitle {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+#presentation img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  opacity: 0.94;
+  filter: brightness(99%) contrast(108%) saturate(64%) blur(0px) hue-rotate(0deg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+body {
+  position: relative;
+}
 
 /*# sourceMappingURL=style.css.map */

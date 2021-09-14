@@ -1,1 +1,13 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "base/typography";
+@import "utils/variables";
+@import "utils/animations";
+@import "layouts/navbar";
+@import "layouts/header";
+@import "components/buttons";
+@import "pages/hero";
+@import "pages/presentation";
+
+body {
+  position: relative;
+}

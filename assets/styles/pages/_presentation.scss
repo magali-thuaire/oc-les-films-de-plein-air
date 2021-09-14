@@ -1,0 +1,38 @@
+#presentation {
+  background-color: $background;
+  padding: 80px !important;
+
+  h2 {
+    font-family: $typo-secondary-bold;
+    color: $tertiary;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+
+  p {
+    font-family: $typo-secondary;
+    color: $tertiary;
+    font-size: 12px;
+    &:not(.subtitle) {
+      margin: 20px 0 0 0;
+    }
+    &.subtitle {
+      margin: 0;
+      font-family: $typo-secondary;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+  }
+  img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    opacity: 0.94;
+    filter: brightness( 99% ) contrast( 108% ) saturate( 64% ) blur( 0px ) hue-rotate( 0deg );
+    border-radius: 10px 10px 10px 10px;
+  }
+}

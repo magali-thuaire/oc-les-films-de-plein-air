@@ -1,0 +1,19 @@
+.btn-primary {
+  background-color: #415733C7;
+  border: none;
+  color: white;
+  font-family: $typo-secondary-bold;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 50px;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 2;
+  &:hover {
+    background-color: #FFFFFFBD;
+    color: $secondary;
+  }
+}

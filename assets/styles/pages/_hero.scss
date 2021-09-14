@@ -1,0 +1,72 @@
+#hero {
+  background: url("../images/festival-des-films-de-plein-air-monceau.jpeg");
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .overlay {
+    background-color: $primary;
+    opacity: 0.38;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+  }
+
+  p.title {
+    color: white;
+    font-family: $typo-primary;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 46px rgb(0 0 0 / 30%);
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
+  }
+
+  p.subtitle {
+    color: #E19E43;
+    font-family: $typo-primary;
+    font-size: 32px;
+    font-weight: 600;
+    text-shadow: 38px 16px 66px #000000;
+    mix-blend-mode: screen;
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
+  }
+
+  h1 {
+    color: white;
+    font-family: $typo-primary;
+    font-size: 70px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-shadow: 10px 12px 100px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+  }
+
+  .separator {
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .headline {
+    text-transform: uppercase;
+    font-size: 32px;
+    color: white;
+    font-family: $typo-secondary;
+  }
+
+}
