@@ -3,10 +3,12 @@
 @import "utils/variables";
 @import "utils/animations";
 @import "layouts/navbar";
+@import "layouts/navpill";
 @import "layouts/header";
 @import "components/buttons";
 @import "pages/hero";
 @import "pages/presentation";
+@import "pages/films";
 
 body {
   position: relative;
