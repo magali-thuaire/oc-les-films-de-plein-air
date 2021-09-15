@@ -2,6 +2,12 @@
   background-color: white;
   padding: 80px !important;
 
+  figcaption {
+    color: $dark-grey;
+    padding: 15px;
+    font-family: $typo-secondary-bold;
+  }
+
   h2 {
     font-family: $typo-secondary-bold;
     color: $tertiary;

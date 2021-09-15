@@ -8,7 +8,9 @@ $nav-link-hover-color: lighten($dark-grey, 30%);
 $nav-link-bg: $background;
 
 #pills-tab {
+  font-family: $typo-secondary;
   margin-top: 60px;
+
   .nav-link:not(.active) {
     background-color: $nav-link-bg;
   }

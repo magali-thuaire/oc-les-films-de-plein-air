@@ -64,9 +64,26 @@ $(function () {
 });
 
 $(document).ready(function() {
+
+    // Select multiple
     $('.js-example-basic-multiple').select2({
         placeholder: "Choix des séances",
         allowClear: true,
     });
 
+    // Scroll top
+    var target = $('#presentation').offset().top -500;
+    $('#scroll-top').hide();
+
+    $(window).scroll(function() {
+        var scrollTop = $(window).scrollTop();
+
+        if (scrollTop > target) {
+            $('#scroll-top').fadeIn();
+        } else {
+            $('#scroll-top').fadeOut();
+        }
+    });
+
 });
+

@@ -8,12 +8,8 @@
     <title>Films de Plein Air – Site du Festival des Films de Plein Air</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
-    <script src="scripts/jquery.js"></script>
-    <script src="scripts/select2.js"></script>
-    <script src="scripts/bootstrap.js"></script>
-    <script src="scripts/scripts.js"></script>
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
     <header>
         <nav id="navbar" class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
             <div class="container-fluid ml-6">
@@ -35,6 +31,7 @@
             </div>
         </nav>
     </header>
+
     <section id="hero">
         <div class="container">
             <div class="overlay"></div>
@@ -93,52 +90,88 @@
                 <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
                     <div class="row">
                         <div class="col-4">
-                            <img width="310" height="420" src="images/shutter-island.jpg">
+                            <figure>
+                                <figcaption>Séance 18h30</figcaption>
+                                <img width="310" height="420" src="images/shutter-island.jpg">
+                            </figure>
                         </div>
                         <div class="col-4">
-                            <img width="310" height="420" src="images/drive.jpg">
+                            <figure>
+                                <figcaption>Séance 20h30</figcaption>
+                                <img width="310" height="420" src="images/drive.jpg">
+                            </figure>
                         </div>
                         <div class="col-4">
-                            <img width="310" height="420" src="images/alice-au-pays-des-merveilles.jpeg">
+                            <figure>
+                                <figcaption>Séance 22h30</figcaption>
+                                <img width="310" height="420" src="images/alice-au-pays-des-merveilles.jpeg">
+                            </figure>
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
                     <div class="row">
                         <div class="col-4">
-                            <img width="310" height="420" src="images/fight-club.jpeg">
+                            <figure>
+                                <figcaption>Séance 18h30</figcaption>
+                                <img width="310" height="420" src="images/fight-club.jpeg">
+                            </figure>
                         </div>
                         <div class="col-4">
-                            <img width="310" height="420" src="images/invictus.jpeg">
+                            <figure>
+                                <figcaption>Séance 20h30</figcaption>
+                                <img width="310" height="420" src="images/invictus.jpeg">
+                            </figure>
                         </div>
                         <div class="col-4">
-                            <img width="310" height="420" src="images/dracula.jpeg">
+                            <figure>
+                                <figcaption>Séance 22h30</figcaption>
+                                <img width="310" height="420" src="images/dracula.jpeg">
+                            </figure>
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
                     <div class="row">
                         <div class="col-4">
-                            <img width="310" height="420" src="images/bienvenue-a-gattaca.jpeg">
+                            <figure>
+                                <figcaption>Séance 18h30</figcaption>
+                                <img width="310" height="420" src="images/bienvenue-a-gattaca.jpeg">
+                            </figure>
                         </div>
                         <div class="col-4">
-                            <img width="310" height="420" src="images/l-armee-des-12-singes.jpeg">
+                            <figure>
+                                <figcaption>Séance 20h30</figcaption>
+                                <img width="310" height="420" src="images/l-armee-des-12-singes.jpeg">
+                            </figure>
                         </div>
                         <div class="col-4">
-                            <img width="310" height="420" src="images/shining.jpg">
+                            <figure>
+                                <figcaption>Séance 22h30</figcaption>
+                                <img width="310" height="420" src="images/shining.jpg">
+                            </figure>
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-3-tab">
                     <div class="row">
                         <div class="col-4">
-                            <img width="310" height="420" src="images/requiem-for-a-dream.jpeg">
+                            <figure>
+                                <figcaption>Séance 18h30</figcaption>
+                                <img width="310" height="420" src="images/requiem-for-a-dream.jpeg">
+                            </figure>
                         </div>
                         <div class="col-4">
-                            <img width="310" height="420" src="images/american-beauty.jpeg">
+                            <figure>
+                                <figcaption>Séance 20h30</figcaption>
+                                <img width="310" height="420" src="images/american-beauty.jpeg">
+                            </figure>
                         </div>
                         <div class="col-4">
-                            <img width="310" height="420" src="images/full-metal-jacket.jpg">
+                            <figure>
+                                <figcaption>Séance 22h30</figcaption>
+                                <img width="310" height="420" src="images/full-metal-jacket.jpg">
+                            </figure>
                         </div>
                     </div>
                 </div>
@@ -285,7 +318,7 @@
                 </div>
             </div>
             <div id="social" class="d-flex flex-column align-items-center">
-                <ul>
+                <ul class="mt-5">
                     <li><span class="social-icon social-facebook"><i class="fa fa-facebook"></i></span></li>
                     <li><span class="social-icon social-instagram"><i class="fa fa-instagram"></i></span></li>
                     <li><span class="social-icon social-twitter"><i class="fa fa-twitter"></i></span></li>
@@ -313,5 +346,12 @@
             </div>
         </div>
     </footer>
+
+    <a aria-label="Scroll to the top of the page" href="#" id="scroll-top" class="scroll-top-right" style="opacity: 1; display: block;"><i class=" fa fa-angle-up" aria-hidden="true" role="img"></i></a>
+
 </body>
+<script src="scripts/jquery.js"></script>
+<script src="scripts/select2.js"></script>
+<script src="scripts/bootstrap.js"></script>
+<script src="scripts/scripts.js"></script>
 </html>
