@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import "../vendor/boutons.css";
 @import "../../node_modules/select2/dist/css/select2.css";
+@import "../../node_modules/font-awesome/css/font-awesome.css";
 @font-face {
   font-family: "Montserrat";
   src: url("fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
@@ -12,6 +13,10 @@
 @font-face {
   font-family: "Cardo";
   src: url("fonts/cardo/Cardo-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/poppins/Poppins-Regular.ttf") format("truetype");
 }
 /* Buzz Out */
 @keyframes animation-buzz-out {
@@ -361,6 +366,107 @@ header {
   width: 100%;
   opacity: 0.94;
   filter: brightness(99%) contrast(108%) saturate(64%) blur(0px) hue-rotate(0deg);
+}
+#news .card {
+  font-family: "Montserrat", sans-serif;
+}
+
+#contact {
+  background-color: #F4F4F5;
+  padding: 80px 0;
+}
+#contact #reservation-form {
+  padding: 30px 30px;
+}
+#contact h2, #contact .h2 {
+  font-family: "Montserrat Bold", sans-serif;
+  color: #DCA652;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+#contact p {
+  font-family: "Montserrat", sans-serif;
+  color: #719759;
+  font-size: 12px;
+}
+#contact p:not(.subtitle) {
+  margin: 20px 0 0 0;
+}
+#contact p.subtitle {
+  color: #DCA652;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+#contact .icon-custom {
+  color: #597746;
+  font-size: 40px;
+}
+#contact h5, #contact .h5 {
+  color: #777777;
+}
+#contact a.card {
+  text-decoration: none;
+}
+#contact .card {
+  background-color: #F4F4F5;
+  border-color: #F4F4F5;
+  padding: 50px;
+  border-radius: 15px 15px 15px 70px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+  font-family: "Montserrat", sans-serif;
+}
+#contact .card-text {
+  font-size: 14px;
+}
+#contact #social {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact #social ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+#contact #social .social-icon {
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 27px;
+  margin-right: 11px;
+  cursor: pointer;
+}
+#contact #social .social-twitter {
+  background-color: #55acee;
+}
+#contact #social .social-facebook {
+  background-color: #3b5999;
+}
+#contact #social .social-pinterest {
+  background-color: #cb2027;
+}
+#contact #social .social-google {
+  background-color: #dd4b39;
+}
+#contact #social .social-instagram {
+  background-color: #dd4b39;
+}
+#contact #social .social-icon i {
+  transition: 0.4s all;
+}
+#contact #social .social-icon:hover i {
+  transform: scale(1.4);
 }
 
 /*!

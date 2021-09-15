@@ -10,10 +10,12 @@
 @import "pages/films";
 @import "pages/reservations";
 @import "pages/news";
+@import "pages/contact";
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "components/buttons";
 @import "../../node_modules/select2/dist/css/select2.css";
+@import "../../node_modules/font-awesome/css/font-awesome.css";
 
 body {
   position: relative;
