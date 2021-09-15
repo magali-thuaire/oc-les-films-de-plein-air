@@ -1,16 +1,16 @@
+$nav-pills-border-radius: 0;
+$nav-pills-link-active-color: $background;
+$nav-pills-link-active-bg: $dark-grey;
+$nav-link-padding-y: 1.5rem;
+$nav-link-padding-x: 1.5rem;
+$nav-link-color: $dark-grey;
+$nav-link-hover-color: lighten($dark-grey, 30%);
+$nav-link-bg: $background;
+
 #pills-tab {
   margin-top: 60px;
-  .nav-item {
-    a {
-      background-color: $background !important;
-      border-radius: 0 0 0 0 !important;
-      color: #444;
-      padding: 20px;
-      &.active {
-        color: $background;
-        background-color: #444 !important;
-      }
-    }
+  .nav-link:not(.active) {
+    background-color: $nav-link-bg;
   }
 }
 
@@ -24,7 +24,7 @@
     animation-fill-mode: backwards;
   }
   &:nth-child(3) {
-    animation: slide-down 1.5s ease-in-out 500ms;
+    animation: slide-down 1.5s ease-in-out 800ms;
     animation-fill-mode: backwards;
   }
 }

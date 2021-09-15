@@ -8,26 +8,29 @@
     <title>Films de Plein Air – Site du Festival des Films de Plein Air</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
-    <script src="../node_modules/jquery/jquery.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/select2.js"></script>
+    <script src="scripts/bootstrap.js"></script>
     <script src="scripts/scripts.js"></script>
 </head>
-<body data-spy="scroll" data-target="#navbar">
+<body data-bs-spy="scroll" data-bs-target="#navbar">
     <header>
         <nav id="navbar" class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
-            <a class="navbar-brand" href="#">
-                <img class="navbar-custom__image" src="images/logo.png" alt="logo-les-films-de-plein-air">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="scroll navbar-custom__item nav-item nav-link active" href="#presentation">Qui sommes-nous ? <span class="sr-only">(current)</span></a>
-                    <a class="scroll navbar-custom__item nav-item nav-link" href="#films">Les séances</a>
-                    <a class="scroll navbar-custom__item nav-item nav-link" href="#">Réservations</a>
-                    <a class="scroll navbar-custom__item nav-item nav-link" href="#">Actualités</a>
-                    <a class="scroll navbar-custom__item nav-item nav-link" href="#">Nous contacter</a>
+            <div class="container-fluid ml-6">
+                <a class="navbar-brand" href="#">
+                    <img class="navbar-custom__image" src="images/logo.png" alt="logo-les-films-de-plein-air">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="navbar-custom__item nav-link" href="#presentation">Qui sommes-nous ?</a>
+                        <a class="navbar-custom__item nav-link" href="#films">Les séances</a>
+                        <a class="navbar-custom__item nav-link" href="#reservations">Réservations</a>
+                        <a class="navbar-custom__item nav-link" href="#">Actualités</a>
+                        <a class="navbar-custom__item nav-link" href="#">Nous contacter</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -45,7 +48,7 @@
                 <div class="typewrite headline" data-period="2000" data-type='[ "Gratuit" ]'>
                     <span class="wrap"></span>
                 </div>
-                <a class="btn btn-primary animation-buzz-out">Je réserve</a>
+                <a href="#reservations" class="scroll btn btn-primary btn-theme animation-buzz-out">Je réserve</a>
             </div>
         </div>
     </section>
@@ -74,16 +77,16 @@
             <h2>Les séances</h2>
             <ul class="nav nav-pills mb-3 nav-fill" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link active" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="true">Vendredi 05 août 2022</a>
+                    <button class="nav-link active" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="true">Vendredi 05 août 2022</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="false">Samedi 06 août 2022</a>
+                    <button class="nav-link" id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2" aria-selected="false">Samedi 06 août 2022</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="pills-3-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false">Dimanche 07 août 2022</a>
+                    <button class="nav-link" id="pills-3-tab" data-bs-toggle="pill" data-bs-target="#pills-3" type="button"" role="tab" aria-controls="pills-3" aria-selected="false">Dimanche 07 août 2022</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-4" aria-selected="false">Lundi 08 août 2022</a>
+                    <button class="nav-link" id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false">Lundi 08 août 2022</button>
                 </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
@@ -138,6 +141,62 @@
                             <img width="310" height="420" src="images/full-metal-jacket.jpg">
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <section id="reservations">
+        <div class="container text-center">
+            <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+            <h2>Réservations</h2>
+            <div class="row">
+                <div class="col-6">
+                    <img src="images/contact.jpeg" alt="">
+                </div>
+                <div id="reservation-form" class="col-6">
+                    <form>
+                        <div class="row">
+                            <div class="form-group col mb-4">
+                                <input required type="text" class="form-control" id="firstname" name="firstname" placeholder="Prénom">
+                            </div>
+                            <div class="form-group col mb-4">
+                                <input required type="text" class="form-control" id="name" name="name" placeholder="Nom">
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input required type="email" class="form-control" id="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-group mb-4">
+                            <input required placeholder="Nombre de personnes" type="number" class="form-control" id="number" name="number">
+                        </div>
+                        <div class="form-group">
+                            <select required class="js-example-basic-multiple form-select" name="seances[]" multiple="multiple" id="seance">
+                                <optgroup label="Vendredi 05 août 2022">
+                                    <option value="1">18h30 - Shutter Island</option>
+                                    <option value="2">20h30 - Drive</option>
+                                    <option value="3">22h30 - Alice aux Pays des Merveilles</option>
+                                </optgroup>
+                                <optgroup label="Samedi 04 août 2022">
+                                    <option value="1">18h30 - Fight Club</option>
+                                    <option value="2">20h30 - Invictus</option>
+                                    <option value="3">22h30 - Dracula</option>
+                                </optgroup>
+                                <optgroup label="Dimanche 05 août 2022">
+                                    <option value="1">18h30 - Bienvenue à Gattaca</option>
+                                    <option value="2">20h30 - L'rmée des 12 singes</option>
+                                    <option value="3">22h30 - Shining</option>
+                                </optgroup>
+                                <optgroup label="Lundi 06 août 2022">
+                                    <option value="1">18h30 - Requiem For A Dream</option>
+                                    <option value="2">20h30 - American Beauty</option>
+                                    <option value="3">22h30 - Full Metal Jacket</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-theme btn-bordure">Je réserve</button>
+                    </form>
                 </div>
             </div>
         </div>

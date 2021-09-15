@@ -55,28 +55,18 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
-
-$(document).ready(function(){
-    let scroll_link = $('.scroll');
-
-    //smooth scrolling -----------------------
-    scroll_link.click(function(e){
-        console.log('ici');
-        e.preventDefault();
-        let url = $('body').find($(this).attr('href')).offset().top;
-        $('html, body').animate({
-            scrollTop : url
-        },700);
-        $(this).parent().addClass('active');
-        $(this).parent().siblings().removeClass('active');
-        return false;
-    });
-});
-
-
+// Couleur de la barre de navigation après le scroll
 $(function () {
     $(document).scroll(function () {
         var $nav = $(".fixed-top");
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
+});
+
+$(document).ready(function() {
+    $('.js-example-basic-multiple').select2({
+        placeholder: "Choix des séances",
+        allowClear: true,
+    });
+
 });

@@ -1,7 +1,8 @@
 .navbar-custom {
   &__image {
     width: 120px;
-    margin-right: 100px;
+    margin-left: 20px;
+    margin-right: 80px;
     transform: scale(1);
     opacity: 1;
     transition-property: all;
@@ -30,7 +31,7 @@
       transition: all 200ms ease 100ms;
       width: 0%;
     }
-    &:hover {
+    &:hover, &.active {
       color: $tertiary !important;
       transition-property: color;
       transition-delay: 100ms;

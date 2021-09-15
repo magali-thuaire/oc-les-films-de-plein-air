@@ -1,0 +1,51 @@
+#reservations {
+  background-color: $background;
+  padding: 80px 0;
+  #reservation-form {
+    padding: 30px 30px;
+  }
+
+  h2 {
+    font-family: $typo-secondary-bold;
+    color: $tertiary;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+  }
+
+  p {
+    font-family: $typo-secondary;
+    color: $tertiary;
+    font-size: 12px;
+    &:not(.subtitle) {
+      margin: 20px 0 0 0;
+    }
+    &.subtitle {
+      margin: 0;
+      font-family: $typo-secondary;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+  }
+  img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    opacity: 0.94;
+    filter: brightness( 99% ) contrast( 108% ) saturate( 64% ) blur( 0px ) hue-rotate( 0deg );
+  }
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border: none !important;
+  color: #212529 !important;
+  background-color: #fff;
+  border-color: #a0ab99 !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(65 87 51 / 25%) !important;
+}
+

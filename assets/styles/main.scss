@@ -1,15 +1,28 @@
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "base/typography";
 @import "utils/variables";
+@import "base/typography";
+
 @import "utils/animations";
 @import "layouts/navbar";
 @import "layouts/navpill";
 @import "layouts/header";
-@import "components/buttons";
 @import "pages/hero";
 @import "pages/presentation";
 @import "pages/films";
+@import "pages/reservations";
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "components/buttons";
+@import "../../node_modules/select2/dist/css/select2.css";
 
 body {
   position: relative;
+}
+
+.select2-selection--multiple {
+  padding: 10px 5px !important;
+}
+
+.select2-search__field {
+  margin-top: 0 !important;
+  display: block;
 }

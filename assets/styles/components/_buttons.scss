@@ -1,5 +1,8 @@
-.btn-primary {
-  background-color: #415733C7;
+@import "../vendor/boutons.css";
+$theme: #415733C7;
+
+.btn-theme {
+  background-color: $theme;
   border: none;
   color: white;
   font-family: $typo-secondary-bold;
@@ -12,8 +15,55 @@
   letter-spacing: 2px;
   position: relative;
   z-index: 2;
-  &:hover {
-    background-color: #FFFFFFBD;
-    color: $secondary;
+  &:hover, &:active {
+    background-color: #FFFFFFBD !important;
+    border: solid 1px $theme !important;
+    color: $theme !important;
   }
+}
+
+.btn-bordure {
+  border-radius: 0;
+  border-color: $theme;
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.btn-bordure:before, .btn-bordure:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-color: $theme;
+  box-sizing: border-box;
+  border-style: solid;
+  width: 1em;
+  height: 1em;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-bordure:before {
+  top: -6px;
+  left: -6px;
+  border-width: 2px 0 0 2px;
+  z-index: 5;
+}
+
+.btn-bordure:after {
+  bottom: -6px;
+  right: -6px;
+  border-width: 0 2px 2px 0;
+}
+
+.btn-bordure:hover:before, .btn-bordure:hover:after {
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  border-color: $theme;
+}
+
+.btn-bordure:hover {
+  color:#fff;
+  background-color: $theme;
+  border-color: $theme;
 }
