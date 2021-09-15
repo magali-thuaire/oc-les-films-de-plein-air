@@ -318,6 +318,51 @@ header {
   box-shadow: 0 0 0 0.25rem rgba(65, 87, 51, 0.25) !important;
 }
 
+#news {
+  background-color: white;
+  padding: 80px 0;
+}
+#news h2, #news .h2 {
+  font-family: "Montserrat Bold", sans-serif;
+  color: #DCA652;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+#news h5, #news .h5 {
+  font-family: "Montserrat Bold", sans-serif;
+  color: #DCA652;
+  text-transform: uppercase;
+  border-left: solid 3px #DCA652;
+  padding: 10px;
+}
+#news p {
+  font-family: "Montserrat", sans-serif;
+  color: #DCA652;
+  font-size: 12px;
+}
+#news p:not(.subtitle) {
+  color: #444;
+  margin: 20px 0 0 0;
+}
+#news p.subtitle {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+#news img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  opacity: 0.94;
+  filter: brightness(99%) contrast(108%) saturate(64%) blur(0px) hue-rotate(0deg);
+}
+
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
