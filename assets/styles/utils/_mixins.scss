@@ -1,0 +1,21 @@
+@mixin padding($padding1: 80px, $padding2: 20px){
+
+  padding: $padding1 $padding2 !important;
+
+  @include media-breakpoint-up(md) {
+    padding: $padding1 !important;
+  }
+
+}
+
+@mixin background($color: white) {
+  background-color: $color;
+}
+
+@mixin social-background() {
+  @each $name, $color in $social {
+    &--#{$name}{
+      background-color: $color;
+    }
+  }
+}

@@ -11,6 +11,10 @@ $nav-link-bg: $background;
   font-family: $typo-secondary;
   margin-top: 60px;
 
+  .nav-link {
+    font-size: 14px;
+  }
+
   .nav-link:not(.active) {
     background-color: $nav-link-bg;
   }

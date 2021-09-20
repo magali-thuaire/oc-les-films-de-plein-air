@@ -85,5 +85,12 @@ $(document).ready(function() {
         }
     });
 
+    // Menu Mobile
+    const navLinks = document.querySelectorAll('.navbar-custom__item');
+    const menuToggle = document.getElementById('navbarNavAltMarkup');
+    navLinks.forEach((l) => {
+        l.addEventListener('click', () => { menuToggle.classList.remove('show') })
+    });
+
 });
 

@@ -1,52 +1,49 @@
 #news {
-  background-color: white;
-  padding: 80px 0;
 
-  h2 {
-    font-family: $typo-secondary-bold;
+  @include background();
+  @include padding(80px, 0);
+
+  .card-title {
     color: $tertiary;
-    text-transform: uppercase;
-    font-size: 30px;
-    letter-spacing: 2px;
-    margin-bottom: 50px;
+  }
+  p.card-text {
+    color: $dark-grey;
   }
 
-  h5 {
-    font-family: $typo-secondary-bold;
-    color: $tertiary;
-    text-transform: uppercase;
-    border-left: solid 3px $tertiary;
-    padding:10px;
-  }
+  #social {
 
-  p {
-    font-family: $typo-secondary;
-    color: $tertiary;
-    font-size: 12px;
-    &:not(.subtitle) {
-      color: $dark-grey;
-      margin: 20px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
     }
-    &.subtitle {
-      margin: 0;
-      font-family: $typo-secondary;
-      font-weight: 400;
-      text-transform: uppercase;
-      font-size: 14px;
-      letter-spacing: 2px;
-    }
-  }
-  img {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width:100%;
-    opacity: 0.94;
-    filter: brightness( 99% ) contrast( 108% ) saturate( 64% ) blur( 0px ) hue-rotate( 0deg );
-  }
 
-  .card {
-    font-family: $typo-secondary;
+    .social {
+      &-icon {
+        height: 70px;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 27px;
+        margin-right: 11px;
+        cursor: pointer;
+        i {
+          transition: 0.4s all;
+        }
+        &:hover i {
+          transform: scale(1.4)
+        }
+      }
+
+    @include social-background();
+
+    }
   }
 }
 

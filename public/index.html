@@ -1,31 +1,42 @@
 <!doctype html>
 <html lang="fr-FR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Films de Plein Air – Site du Festival des Films de Plein Air</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/select2.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
 </head>
+
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
     <header>
         <nav id="navbar" class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
-            <div class="container-fluid ml-6">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img class="navbar-custom__image" src="images/logo.png" alt="logo-les-films-de-plein-air">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button class=" custom-toggler navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="navbar-custom__item nav-link" href="#presentation">Qui sommes-nous ?</a>
-                        <a class="navbar-custom__item nav-link" href="#films">Les séances</a>
-                        <a class="navbar-custom__item nav-link" href="#reservations">Réservations</a>
-                        <a class="navbar-custom__item nav-link" href="#news">Actualités</a>
+                        <a class="navbar-custom__item nav-link" href="#presentation">Présentation</a>
+                        <a class="navbar-custom__item nav-link" href="#programmation">Programmation</a>
+                        <a class="navbar-custom__item nav-link" href="#registrations">Pré-inscriptions</a>
+                        <a class="navbar-custom__item nav-link" href="#news">Actualité</a>
                         <a class="navbar-custom__item nav-link" href="#contact">Nous contacter</a>
+                    </div>
+                    <div class="d-flex navbar-custom__item justify-content-center">
+                        <ul class="list-unstyled d-flex mb-0">
+                            <li><a href="#" class="social-icon social-facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="social-icon social-twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="social-icon social-instagram"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -45,7 +56,7 @@
                 <div class="typewrite headline" data-period="2000" data-type='[ "Gratuit" ]'>
                     <span class="wrap"></span>
                 </div>
-                <a href="#reservations" class="scroll btn btn-primary btn-theme animation-buzz-out">Je réserve</a>
+                <a href="#registrations" class="scroll btn btn-primary btn-theme animation-buzz-out">Pré-inscriptions</a>
             </div>
         </div>
     </section>
@@ -53,42 +64,42 @@
     <section id="presentation">
         <div class="container">
             <div class="row">
-                <div class="col-6">
-                    <p class="subtitle">Les films en plein air</p>
-                    <h2>Qui sommes-nous ?</h2>
+                <div class="col-12 col-lg-6">
+                    <p class="subtitle">Festival du film de plein air</p>
+                    <h2>Présentation</h2>
                     <div class="text-justify">
                         <p>Donec pharetra eros at euismod aliquam. Pellentesque id rhoncus augue, nec maximus enim. Nunc commodo purus sit amet sem pulvinar, eget sagittis nisi porta. Duis tempor, purus quis semper tempor, nisi metus venenatis sapien.</p>
                         <p class="elementor-heading-title elementor-size-default">Faucibus leo elit vel risus. In feugiat ipsum neque, ut rutrum dolor dictum in. Vivamus et magna odio. Morbi urna ipsum, euismod eget sagittis dignissim, finibus eu quam. Pellentesque eu nisi laoreet, tristique lorem quis, vestibulum sapien.</p>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-lg-6 mt-4 mt-lg-0">
                     <img src="images/les-films-de-plein-air.jpeg" alt="">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="films">
+    <section id="programmation">
         <div class="container text-center">
             <p class="subtitle">Projections gratuites de films d'auteur</p>
-            <h2>Les séances</h2>
-            <ul class="nav nav-pills mb-3 nav-fill" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
+            <h2>Programmation</h2>
+            <ul class="nav nav-pills mb-3 nav-fill flex-column flex-lg-row" id="pills-tab" role="tablist">
+                <li class="nav-item flex-lg-fill" role="presentation">
                     <button class="nav-link active" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="true">Vendredi 05 août 2022</button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <li class="nav-item flex-lg-fill" role="presentation">
                     <button class="nav-link" id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2" aria-selected="false">Samedi 06 août 2022</button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <li class="nav-item flex-lg-fill" role="presentation">
                     <button class="nav-link" id="pills-3-tab" data-bs-toggle="pill" data-bs-target="#pills-3" type="button" role="tab" aria-controls="pills-3" aria-selected="false">Dimanche 07 août 2022</button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <li class="nav-item flex-lg-fill" role="presentation">
                     <button class="nav-link" id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false">Lundi 08 août 2022</button>
                 </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
-                    <div class="row">
+                    <div class="row d-none d-lg-inline-flex">
                         <div class="col-4">
                             <figure>
                                 <figcaption>Séance 18h30</figcaption>
@@ -108,9 +119,39 @@
                             </figure>
                         </div>
                     </div>
+                    <div class="d-lg-none">
+                        <ul class="nav nav-tabs nav-tabs--custom" id="myTab1" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#jour1-seance-1" type="button" role="tab" aria-controls="home" aria-selected="true">Séance 18h30</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#jour1-seance-2" type="button" role="tab" aria-controls="profile" aria-selected="false">Séance 20h30</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#jour1-seance-3" type="button" role="tab" aria-controls="contact" aria-selected="false">Séance 22h30</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent1">
+                            <div class="tab-pane fade show active" id="jour1-seance-1" role="tabpanel" aria-labelledby="home-tab">
+                                <figure class="mt-5">
+                                    <img width="310" height="420" src="images/shutter-island.jpg">
+                                </figure>
+                            </div>
+                            <div class="tab-pane fade" id="jour1-seance-2" role="tabpanel" aria-labelledby="profile-tab">
+                                <figure class="mt-5">
+                                    <img width="310" height="420" src="images/drive.jpg">
+                                </figure>
+                            </div>
+                            <div class="tab-pane fade" id="jour1-seance-3" role="tabpanel" aria-labelledby="contact-tab">
+                                <figure class="mt-5">
+                                    <img width="310" height="420" src="images/alice-au-pays-des-merveilles.jpeg">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
-                    <div class="row">
+                    <div class="row d-none d-lg-inline-flex">
                         <div class="col-4">
                             <figure>
                                 <figcaption>Séance 18h30</figcaption>
@@ -130,9 +171,39 @@
                             </figure>
                         </div>
                     </div>
+                    <div class="d-lg-none">
+                        <ul class="nav nav-tabs nav-tabs--custom" id="myTab2" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#jour2-seance-1" type="button" role="tab" aria-selected="true">Séance 18h30</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#jour2-seance-2" type="button" role="tab" aria-selected="false">Séance 20h30</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#jour2-seance-3" type="button" role="tab" aria-selected="false">Séance 22h30</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent2">
+                            <div class="tab-pane fade show active" id="jour2-seance-1" role="tabpanel" aria-labelledby="home-tab">
+                                <figure class="mt-5">
+                                    <img width="310" height="420" src="images/fight-club.jpeg">
+                                </figure>
+                            </div>
+                            <div class="tab-pane fade" id="jour2-seance-2" role="tabpanel" aria-labelledby="profile-tab">
+                                <figure class="mt-5">
+                                    <img width="310" height="420" src="images/invictus.jpeg">
+                                </figure>
+                            </div>
+                            <div class="tab-pane fade" id="jour2-seance-3" role="tabpanel" aria-labelledby="contact-tab">
+                                <figure class="mt-5">
+                                    <img width="310" height="420" src="images/dracula.jpeg">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
-                    <div class="row">
+                    <div class="row d-none d-lg-inline-flex">
                         <div class="col-4">
                             <figure>
                                 <figcaption>Séance 18h30</figcaption>
@@ -152,9 +223,39 @@
                             </figure>
                         </div>
                     </div>
+                    <div class="d-lg-none">
+                        <ul class="nav nav-tabs nav-tabs--custom" id="myTab3" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#jour3-seance-1" type="button" role="tab" aria-selected="true">Séance 18h30</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#jour3-seance-2" type="button" role="tab" aria-selected="false">Séance 20h30</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#jour3-seance-3" type="button" role="tab" aria-selected="false">Séance 22h30</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent3">
+                            <div class="tab-pane fade show active" id="jour3-seance-1" role="tabpanel" aria-labelledby="home-tab">
+                                <figure class="mt-5">
+                                    <img width="310" height="420" src="images/bienvenue-a-gattaca.jpeg">
+                                </figure>
+                            </div>
+                            <div class="tab-pane fade" id="jour3-seance-2" role="tabpanel" aria-labelledby="profile-tab">
+                                <figure class="mt-5">
+                                    <img width="310" height="420" src="images/l-armee-des-12-singes.jpeg">
+                                </figure>
+                            </div>
+                            <div class="tab-pane fade" id="jour3-seance-3" role="tabpanel" aria-labelledby="contact-tab">
+                                <figure class="mt-5">
+                                    <img width="310" height="420" src="images/shining.jpg">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-3-tab">
-                    <div class="row">
+                    <div class="row d-none d-lg-inline-flex">
                         <div class="col-4">
                             <figure>
                                 <figcaption>Séance 18h30</figcaption>
@@ -174,20 +275,50 @@
                             </figure>
                         </div>
                     </div>
+                    <div class="d-lg-none">
+                        <ul class="nav nav-tabs nav-tabs--custom" id="myTab4" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#jour4-seance-1" type="button" role="tab" aria-selected="true">Séance 18h30</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#jour4-seance-2" type="button" role="tab" aria-selected="false">Séance 20h30</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#jour4-seance-3" type="button" role="tab" aria-selected="false">Séance 22h30</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent4">
+                            <div class="tab-pane fade show active" id="jour4-seance-1" role="tabpanel" aria-labelledby="home-tab">
+                                <figure class="mt-3">
+                                    <img width="310" height="420" src="images/requiem-for-a-dream.jpeg">
+                                </figure>
+                            </div>
+                            <div class="tab-pane fade" id="jour4-seance-2" role="tabpanel" aria-labelledby="profile-tab">
+                                <figure class="mt-3">
+                                    <img width="310" height="420" src="images/american-beauty.jpeg">
+                                </figure>
+                            </div>
+                            <div class="tab-pane fade" id="jour4-seance-3" role="tabpanel" aria-labelledby="contact-tab">
+                                <figure class="mt-3">
+                                    <img width="310" height="420" src="images/full-metal-jacket.jpg">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="reservations">
+    <section id="registrations">
         <div class="container text-center">
             <p class="subtitle">Lorem ipsum dolor sit amet.</p>
-            <h2>Réservations</h2>
-            <div class="row">
-                <div class="col-6">
+            <h2>Pré-inscriptions</h2>
+            <div class="row mt-5">
+                <div class="d-none d-lg-inline-flex col-lg-6">
                     <img src="images/contact.jpeg" alt="">
                 </div>
-                <div id="reservation-form" class="col-6">
+                <div id="registration-form" class="col-12 col-lg-6">
                     <form>
                         <div class="row">
                             <div class="form-group col mb-4">
@@ -227,7 +358,7 @@
                                 </optgroup>
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-theme btn-bordure">Je réserve</button>
+                        <button type="submit" class="btn btn-primary btn-theme btn-bordure">Se préinscrire</button>
                     </form>
                 </div>
             </div>
@@ -236,9 +367,9 @@
 
     <section id="news">
         <div class="container text-center">
-            <p class="subtitle">Adipisci harum quia quod voluptas.</p>
-            <h2>Actualités</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <p class="subtitle">#festivaldufilmdepleinair</p>
+            <h2>Suivez l'actualité en live</h2>
+            <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 mt-3 p-4">
                 <div class="col">
                     <div class="card h-100" href="#">
                         <img src="images/news1.jpg" class="card-img-top" alt="actualité">
@@ -279,17 +410,24 @@
                     </div>
                 </div>
             </div>
+            <div id="social" class="mt-5">
+                <ul>
+                    <li><span class="social-icon social--facebook"><i class="fa fa-facebook"></i></span></li>
+                    <li><span class="social-icon social--twitter"><i class="fa fa-twitter"></i></span></li>
+                    <li><span class="social-icon social--instagram"><i class="fa fa-instagram"></i></span></li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <section id="contact">
         <div class="container text-center">
-            <p class="subtitle">Aut cumque enim et minima!</p>
+            <p class="subtitle">Les films de plein air</p>
             <h2>Nous contacter</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5">
                 <div class="col">
                     <div class="card h-100" >
-                        <i class="fa fa-mobile icon-custom"></i>
+                        <i class="fa fa-mobile icon--custom"></i>
                         <div class="card-body">
                             <h5 class="card-title">Nous appeler</h5>
                             <p class="card-text">+ 33(0) 600 00 000</p>
@@ -298,7 +436,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100" >
-                        <i class="fa fa-map-marker icon-custom"></i>
+                        <i class="fa fa-map-marker icon--custom"></i>
                         <div class="card-body">
                             <h5 class="card-title">Nous situer</h5>
                             <p class="card-text">Parc Monceau <br>35 Boulevard de Courcelles </br>75008 Paris</p>
@@ -306,37 +444,22 @@
                     </div>
                 </div>
                 <div class="col">
-                    <a class="card h-100" href="mailto:contact@lesfilmsdepleinair.fr">
-                        <i class="fa fa-paper-plane-o icon-custom"></i>
+                    <a class="card h-100" href="mailto:contact@lesfilmsdepleinair.org">
+                        <i class="fa fa-paper-plane-o icon--custom"></i>
                         <div class="card-body">
                             <h5 class="card-title">Nous écrire</h5>
                             <p class="card-text">
-                                contact@lesfilmsdepleinair.fr
+                                contact@lesfilmsdepleinair.org
                             </p>
                         </div>
                     </a>
                 </div>
-            </div>
-            <div id="social" class="d-flex flex-column align-items-center">
-                <ul class="mt-5">
-                    <li><span class="social-icon social-facebook"><i class="fa fa-facebook"></i></span></li>
-                    <li><span class="social-icon social-instagram"><i class="fa fa-instagram"></i></span></li>
-                    <li><span class="social-icon social-twitter"><i class="fa fa-twitter"></i></span></li>
-                    <li><span class="social-icon social-pinterest"><i class="fa fa-pinterest"></i></span></li>
-                    <li><span class="social-icon social-google"><i class="fa fa-google"></i></span></li>
-                </ul>
             </div>
         </div>
     </section>
 
     <footer id="footer">
         <div id="footer-inner">
-            <div id="footer-widgets">
-                <div class="footer-widgets-inner row">
-                    <div class="col-6"></div>
-                    <div class="col-6"></div>
-                </div>
-            </div>
             <div id="footer-bottom" class="clr no-footer-nav">
                 <div id="footer-bottom-inner" class="container clr">
                     <div id="copyright" class="clr" role="contentinfo">
@@ -349,9 +472,10 @@
 
     <a aria-label="Scroll to the top of the page" href="#" id="scroll-top" class="scroll-top-right" style="opacity: 1; display: block;"><i class=" fa fa-angle-up" aria-hidden="true" role="img"></i></a>
 
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/select2.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/scripts.js"></script>
+
 </body>
-<script src="scripts/jquery.js"></script>
-<script src="scripts/select2.js"></script>
-<script src="scripts/bootstrap.js"></script>
-<script src="scripts/scripts.js"></script>
 </html>

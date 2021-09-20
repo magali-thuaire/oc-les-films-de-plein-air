@@ -4,8 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "watch": "sass --watch ./assets/styles/main.scss:./public/css/style.css",
-    "prod": "sass ./assets/styles/main.scss:./public/css/style.css --style compressed",
+    "watch": "sass --watch ./assets/styles/main.scss:./public/styles/style.css",
+    "test": "sass ./assets/styles/main.scss:./public/styles/style.css",
+    "prod": "sass ./assets/styles/main.scss:./public/styles/style.css --style compressed",
     "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "dependencies": {

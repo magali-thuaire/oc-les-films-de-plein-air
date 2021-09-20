@@ -1,16 +1,19 @@
-#presentation {
+#registrations {
 
   @include background($background);
-  @include padding();
+  @include padding(80px, 0);
+
+  #registration-form {
+    padding: 30px 30px;
+  }
 
   img {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width:100%;
     opacity: 0.94;
     filter: brightness( 99% ) contrast( 108% ) saturate( 64% ) blur( 0px ) hue-rotate( 0deg );
-    border-radius: 10px 10px 10px 10px;
   }
-
 }
+

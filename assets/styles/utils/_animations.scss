@@ -35,10 +35,3 @@
   0% { opacity: 0; transform: translateX(20%); }
   100% { opacity: 1; transform: translateX(0); }
 }
-
-.animation-buzz-out:hover {
-  animation-name: animation-buzz-out;
-  animation-duration: 0.75s;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
-}

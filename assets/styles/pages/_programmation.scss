@@ -1,0 +1,22 @@
+#programmation {
+
+  @include background();
+  @include padding();
+
+  figure {
+    img {
+      width: 70%;
+      height: 70%;
+      @include media-breakpoint-up(lg) {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    figcaption {
+      font-family: $typo-secondary-bold;
+      font-size: 14px;
+      color: $dark-grey;
+      padding: 15px;
+    }
+  }
+}
