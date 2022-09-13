@@ -1,3 +1,5 @@
 # oc-les-films-de-plein-air
 
-https://festival.magali.website
+[Site](https://festival.magali.website)  
+
+[Cahier des charges](https://festival.magali.website/films_cahier_des_charges.pdf)
