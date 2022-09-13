@@ -6,9 +6,8 @@
 
 [Cahier des charges](https://festival.magali.website/films_cahier_des_charges.pdf)
 
----
 
-**Compétences**
+## Compétences
 
 - Identifier les besoins et lister les fonctionnalités
 - Choisir une solution technique adaptée parmi les solutions existantes
