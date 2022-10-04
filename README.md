@@ -2,9 +2,9 @@
 *Gestion de projet et Maquette html/ccs*
 
 
-[Site](https://festival.magali.website)  
+[Lien vers le site](https://festival.magali.website)  
 
-[Cahier des charges](https://festival.magali.website/films_cahier_des_charges.pdf)
+[Lien vers le cahier des charges](https://festival.magali.website/films_cahier_des_charges.pdf)
 
 
 ## Compétences
